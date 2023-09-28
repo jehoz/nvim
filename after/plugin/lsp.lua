@@ -20,13 +20,22 @@ require('mason-lspconfig').setup({
     },
 })
 
-
+-- lua
 require('lspconfig').lua_ls.setup({})
-require('lspconfig').purescriptls.setup({
+
+-- python
+require('lspconfig').pylsp.setup({})
+
+-- haskell
+require('lspconfig').hls.setup({
+    filetypes = { 'haskell', 'lhaskell', 'cabal' },
+
     settings = {
-        purescript = {
-            formatter = 'purs-tidy'
+        haskell = {
+            formattingProvider = "ormolu"
         }
     }
 })
-require('lspconfig').pylsp.setup({})
+
+-- markdown
+require('lspconfig').marksman.setup({})

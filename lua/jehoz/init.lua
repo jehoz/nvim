@@ -8,6 +8,10 @@ vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 
+-- auto-indenting
+vim.opt.autoindent = true
+vim.opt.smartindent = true
+
 -- disable line wrap
 vim.opt.wrap = false
 
@@ -23,6 +27,7 @@ vim.opt.colorcolumn = "80"
 -- Keybind remapping
 vim.g.mapleader = " "
 
+vim.keymap.set('n', '<leader><CR>', vim.lsp.buf.code_action, {})
 
 -- Colorscheme
 vim.cmd.colorscheme("catppuccin-mocha")

@@ -11,6 +11,7 @@ Plug('aklt/plantuml-syntax')
 -- Telescope fuzzy finder
 Plug('nvim-lua/plenary.nvim')
 Plug('nvim-telescope/telescope.nvim', {branch = '0.1.x'})
+Plug('nvim-telescope/telescope-ui-select.nvim') -- use telescope UI for selections
 
 -- Improved motion
 Plug('ggandor/leap.nvim')
@@ -37,5 +38,10 @@ Plug('VonHeikemen/lsp-zero.nvim', {branch = 'v3.x'})
 -- portable package manager (also makes LSP stuff easier)
 Plug('williamboman/mason.nvim')
 Plug('williamboman/mason-lspconfig.nvim')
+
+-- Status line
+Plug('nvim-lualine/lualine.nvim')
+Plug('kyazdani42/nvim-web-devicons')
+
 
 vim.call('plug#end')
