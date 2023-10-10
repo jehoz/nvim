@@ -24,6 +24,7 @@ Plug('purescript-contrib/purescript-vim')
 
 -- git integration
 Plug('tpope/vim-fugitive')
+Plug('lewis6991/gitsigns.nvim')
 
 -- LSP Support
 Plug('neovim/nvim-lspconfig')
