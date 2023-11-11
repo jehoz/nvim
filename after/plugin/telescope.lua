@@ -11,7 +11,9 @@ require('telescope').setup {
 
 require('telescope').load_extension('ui-select')
 
-vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
+vim.keymap.set('n', '<leader>ff', function()
+    builtin.find_files({ path_display = { "truncate" } })
+end)
 vim.keymap.set('n', '<leader>fg', builtin.git_files, {})
 vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 
