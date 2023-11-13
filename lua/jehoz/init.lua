@@ -49,3 +49,5 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 -- delete buffer without closing window
 vim.keymap.set("n", "<leader>q", ":bp<bar>sp<bar>bn<bar>bd<CR>")
 
+-- switch out of terminal window more easily
+vim.keymap.set("t", "<C-w>", "<C-\\><C-o><C-w>")
