@@ -28,6 +28,13 @@ vim.opt.colorcolumn = "80"
 -- Colorscheme
 vim.cmd.colorscheme("catppuccin-mocha")
 
+-- Setting for GUI client I use on windows since powershell sucks
+if vim.g.neovide then
+    vim.o.guifont = "Iosevka Nerd Font:h10"
+    vim.g.neovide_fullscreen = true
+    vim.g.neovide_cursor_animation_length = 0
+end
+
 ------------------------
 -- Keybind remappings --
 ------------------------
