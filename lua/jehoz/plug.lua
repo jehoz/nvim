@@ -5,9 +5,6 @@ vim.call('plug#begin')
 -- Colors
 Plug('catppuccin/nvim', { as = 'catppuccin' })
 
--- PlantUML syntax
-Plug('aklt/plantuml-syntax')
-
 -- Telescope fuzzy finder
 Plug('nvim-lua/plenary.nvim')
 Plug('nvim-telescope/telescope.nvim', { branch = '0.1.x' })
