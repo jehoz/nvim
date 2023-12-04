@@ -38,4 +38,7 @@ Plug('williamboman/mason-lspconfig.nvim')
 Plug('nvim-lualine/lualine.nvim')
 Plug('kyazdani42/nvim-web-devicons')
 
+-- Comment toggling
+Plug('tpope/vim-commentary')
+
 vim.call('plug#end')
