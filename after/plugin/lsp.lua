@@ -20,14 +20,18 @@ require('mason-lspconfig').setup({
     },
 })
 
+local lspconfig = require("lspconfig")
+
+vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename);
+
 -- lua
-require('lspconfig').lua_ls.setup({})
+lspconfig.lua_ls.setup({})
 
 -- python
-require('lspconfig').pylsp.setup({})
+lspconfig.pylsp.setup({})
 
 -- haskell
-require('lspconfig').hls.setup({
+lspconfig.hls.setup({
     filetypes = { 'haskell', 'lhaskell', 'cabal' },
 
     settings = {
@@ -37,5 +41,8 @@ require('lspconfig').hls.setup({
     }
 })
 
+-- rust
+lspconfig.rust_analyzer.setup({})
+
 -- markdown
-require('lspconfig').marksman.setup({})
+lspconfig.marksman.setup({})
