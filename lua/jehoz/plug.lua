@@ -41,4 +41,7 @@ Plug('kyazdani42/nvim-web-devicons')
 -- Comment toggling
 Plug('tpope/vim-commentary')
 
+-- Better file-tree manipuation
+Plug('stevearc/oil.nvim')
+
 vim.call('plug#end')
