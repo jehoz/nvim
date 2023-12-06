@@ -42,7 +42,9 @@ lspconfig.hls.setup({
 })
 
 -- rust
-lspconfig.rust_analyzer.setup({})
+lspconfig.rust_analyzer.setup({
+    cmd = {"rustup", "run", "stable", "rust-analyzer"}
+})
 
 -- markdown
 lspconfig.marksman.setup({})
