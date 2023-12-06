@@ -35,6 +35,9 @@ if vim.g.neovide then
     vim.g.neovide_cursor_animation_length = 0
 end
 
+-- Autoformat on save
+vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.format()]]
+
 ------------------------
 -- Keybind remappings --
 ------------------------
