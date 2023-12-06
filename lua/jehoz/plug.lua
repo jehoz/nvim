@@ -44,4 +44,7 @@ Plug('tpope/vim-commentary')
 -- Better file-tree manipuation
 Plug('stevearc/oil.nvim')
 
+-- Better display of diagnostics and references
+Plug('folke/trouble.nvim')
+
 vim.call('plug#end')
