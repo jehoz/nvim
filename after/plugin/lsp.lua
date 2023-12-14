@@ -27,7 +27,11 @@ vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename);
 -- lua
 lspconfig.lua_ls.setup({})
 
+-- c++
+lspconfig.ccls.setup({})
+
 -- python
+lspconfig.jedi_language_server.setup({})
 lspconfig.pylsp.setup({})
 
 -- haskell
@@ -42,9 +46,7 @@ lspconfig.hls.setup({
 })
 
 -- rust
-lspconfig.rust_analyzer.setup({
-    cmd = {"rustup", "run", "stable", "rust-analyzer"}
-})
+lspconfig.rust_analyzer.setup({})
 
 -- markdown
 lspconfig.marksman.setup({})
