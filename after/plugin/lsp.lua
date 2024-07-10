@@ -32,7 +32,15 @@ lspconfig.ccls.setup({})
 
 -- python
 lspconfig.jedi_language_server.setup({})
-lspconfig.pylsp.setup({})
+lspconfig.pylsp.setup({
+    settings = {
+        pylsp = {
+            plugins = {
+                maxLineLength = 100
+            }
+        }
+    }
+})
 
 -- haskell
 lspconfig.hls.setup({
@@ -46,7 +54,15 @@ lspconfig.hls.setup({
 })
 
 -- rust
-lspconfig.rust_analyzer.setup({})
+lspconfig.rust_analyzer.setup({
+    check = {
+        command = "clippy",
+    }
+})
 
 -- markdown
 lspconfig.marksman.setup({})
+
+-- gdscripts
+lspconfig.gdscript.setup({
+})

@@ -30,9 +30,10 @@ vim.cmd.colorscheme("catppuccin-mocha")
 
 -- Setting for GUI client I use on windows since powershell sucks
 if vim.g.neovide then
-    vim.o.guifont = "Iosevka Nerd Font:h10"
+    vim.o.guifont = "Iosevka Nerd Font:h10.5"
     vim.g.neovide_fullscreen = true
     vim.g.neovide_cursor_animation_length = 0
+    vim.g.neovide_scroll_animation_length = 0.1
 end
 
 -- Autoformat on save
@@ -48,6 +49,10 @@ vim.keymap.set("n", "<leader><CR>", vim.lsp.buf.code_action, {})
 -- H and L move to beginning and end of line
 vim.keymap.set({ "n", "v" }, "H", "^")
 vim.keymap.set({ "n", "v" }, "L", "$")
+
+-- center cursor after moving up/down half page
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
 
 -- move highlighted lines up and down
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
