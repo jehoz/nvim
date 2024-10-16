@@ -61,5 +61,8 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 -- delete buffer without closing window
 vim.keymap.set("n", "<leader>q", ":bp<bar>sp<bar>bn<bar>bd<CR>")
 
+-- paste over selection without replacing stuff in register
+vim.keymap.set("x", "<leader>p", "\"_dP")
+
 -- get out of terminal mode more easily
 vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>")
