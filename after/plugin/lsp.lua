@@ -48,7 +48,14 @@ lspconfig.hls.setup({
 
     settings = {
         haskell = {
-            formattingProvider = "ormolu"
+            formattingProvider = "ormolu",
+            plugin = {
+                rename = {
+                    config = {
+                        crossModule = true
+                    }
+                }
+            }
         }
     }
 })
